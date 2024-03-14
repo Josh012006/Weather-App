@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Weather App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+
+    <link rel = "icon" href = "media/icon.png">
+</head>
+<body>
+    <div id = "header" style = "display: flex; justify-content: space-between; height: 27px; margin-bottom: 20px;">
+        <input readonly style = "color: black; font-weight: bold; text-align: center;" id = "region" type = "text" style = "text-align: center; font-size: 17px; font-family: 'Times New Roman', Times, serif;">
+        <div id = "random2">
+            <div style = "display: flex; justify-content: space-between;">
+                <input type = "text" id = "country" placeholder = "Country">
+                <input type = "text" id = "city" placeholder = "City">
+            </div>
+            <button id = "search">Search</button>
+        </div>
+    </div>
+    <div id = "displayTemp">
+        <div id = "tempFormat"><div id = "cursor1" class = "cursor">°C</div><div id = "cursor2" class = "cursor">°F</div></div>
+        <div id = "Temp">--</div>
+        <div style = "margin-left: auto; margin-right: auto; margin-top: 15px; font-size: 25px;">Feels like</div>
+        <div id = "feelslike" style = "font-size: 40px; margin-left: auto; margin-right: auto; margin-top: 15px;">--</div>
+    </div>
+    <div id = "prevision">
+        <div id = "day" style = "border-radius: 20px; border: 1px solid black; width: 30%; height: 30px; margin: auto; font-size: 17px; display: flex; justify-content: center; align-items: center;"></div>
+        <div style = "display: flex; align-items: center; justify-content: space-around; margin-top: auto; margin-bottom: auto;">
+            <button class = "flèches" onclick = "">←</button>
+            <div id = "random3" style = "border-radius: 20px; border: 1px solid black; width: 60%; height: 250px; display: flex; justify-content: space-around; flex-direction: column;">
+                <div id = "random1">
+                    <div id = "tminmax"> --° / --° </div>
+                    <img src = "media/weatherstate/" alt = "weather_image" id = "weather_image" width = "64" height = "64">
+                </div>
+                <h6 id = "weather_state" style = "margin: auto; font-size: 25px;">-----</h6>
+                <h5 id = "weather_state_precision" style = "margin: auto; font-size: 19px; font-weight: 100;">----- ------</h5>
+                <div id = "Date" style = "font-size: 21px; margin: auto;">-- ----- ----</div>
+            </div>
+            <button class = "flèches" onclick = "">→</button>
+        </div>
+    </div>
+    <div id = "container">
+        <div class = "four">
+            <div class = "title">
+                <img src = "media/humidity.png" alt = "humidity" style = "margin-left: 10px; margin-right: 10px;">
+                <h6 style = "font-size: 15px;">Humidity</h6>
+            </div>
+            <div class = "text">--</div>
+            <div class = "message"></div>
+        </div>
+        <div class = "four">
+            <div class = "title">
+                <img src = "media/visibility.png" alt = "visibility" style = "margin-left: 10px; margin-right: 10px;">
+                <h6 style = "font-size: 15px;">Visibility</h6>
+            </div>
+            <div class = "text">--</div>
+            <div class = "message"></div>
+        </div>
+        <div class = "four">
+            <div class = "title">
+                <img src = "media/wind.png" alt = "wind" style = "margin-left: 10px; margin-right: 10px;">
+                <h6 style = "font-size: 15px;">Speed and Direction of the wind</h6>
+            </div>
+            <div class = "text">--</div>
+            <div class = "message"></div>
+        </div>
+        <div class = "four">
+            <div class = "title">
+                <img src = "media/pressure.png" alt = "pressure" style = "margin-left: 10px; margin-right: 10px;">
+                <h6 style = "font-size: 15px;">Air pressure</h6>
+            </div>
+            <div class = "text">--</div>
+            <div class = "message"></div>
+        </div>
+    </div>
+    <script src = "scripts.js"></script>
+</body>
+</html>
