@@ -1,8 +1,19 @@
-J'ai fais usage de deux API dans mon projet. Une qui me donne le code du pays nécessaire pour la deuxième API qui quant à elle me donne la météo et les informations basées sur le nom de la ville et le pays.
-L'API de la météo utilise une clé pour fonctionner mais pas d'inquiétude celle que j'ai utilisée est gratuite. Donc toute personne qui télécharge pourra avoir accès aux infos.
+## Preview
 
-## ⚠ NB: Vous aurez la possibilité de faire des recherche pour des pays particulier. Pour que l'application marche, veuillez faire les recherches en anglais (pays, et ville) et apportez le plus de précisions. 
-Par exemple au lieu de United States écrivez United States of America. 
-## Et évitez aussi les caractères spéciaux si possible.
+<div>
+    <img src="/media/preview1.png" alt="preview" />
+    <img src="/media/preview2.png" alt="preview" />
+</div>
 
-## Vous pouvez utiliser l'app tant que vous respectez cela. Bonne utilisation!
+## About the project
+
+I used two APIs in my project. One that gives me the country code needed for the second API, which gives me the weather and information based on the name of the city and the country.
+The weather API requires a key to work, but don't worry, the one I used is free. So anyone who downloads will be able to access the info.
+
+## ⚠ NB: You'll be able to search for specific countries. For the application to work, please search in English (country and city) and be as specific as possible. 
+For example, instead of United States, write United States of America. 
+## And avoid special characters if possible.
+
+## You can use the app as long as you respect this. Good luck!
+
+Translated with www.DeepL.com/Translator (free version)
