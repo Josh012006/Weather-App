@@ -82,6 +82,8 @@ body
     font-weight: bold;
     width: 50px;
     height: 50px;
+
+    margin: 10px;
 }
 
 
@@ -162,6 +164,7 @@ body
 #random2
 {
     display: flex;
+    align-items: center;
 }
 
 
@@ -184,6 +187,12 @@ body
     width: 20%;
     padding: 4px;
 }
+
+#random3 {
+    width: 50%;
+}
+
+
 
 
 
@@ -235,5 +244,21 @@ body
     #random2
     {
         flex-direction: column;
+    }
+
+    #feelslike {
+        width: 70%;
+    }
+
+    #Temp {
+        width: 90%;
+    }
+
+    #random3 {
+        width: 90%;
+    }
+
+    #prevision {
+        width: 90%;
     }
 }

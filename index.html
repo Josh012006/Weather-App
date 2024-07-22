@@ -8,17 +8,19 @@
 
     <link rel = "icon" href = "media/icon.png">
 </head>
-<body>
-    <div id = "header" style = "display: flex; justify-content: space-between; height: 27px; margin-bottom: 20px;">
-        <input readonly style = "color: black; font-weight: bold; text-align: center;" id = "region" type = "text" style = "text-align: center; font-size: 17px; font-family: 'Times New Roman', Times, serif;">
+<body style="display: flex; flex-direction: column; justify-content: space-between;">
+    <div id = "header" style = "display: flex; justify-content: space-between; min-height: 27px; margin-bottom: 20px;">
+        <input readonly style = "color: black; font-weight: bold; text-align: center; border-radius: 7px; min-height: 30px;" id = "region" type = "text" style = "text-align: center; font-size: 17px; font-family: 'Times New Roman', Times, serif;">
         <div id = "random2">
             <div style = "display: flex; justify-content: space-between;">
-                <input type = "text" id = "country" placeholder = "Country">
-                <input type = "text" id = "city" placeholder = "City">
+                <input type = "text" style="border-radius: 7px; min-height: 30px; margin: 4px;" id = "country" placeholder = "Country">
+                <input type = "text" style="border-radius: 7px; min-height: 30px; margin: 4px;" id = "city" placeholder = "City">
             </div>
-            <button id = "search">Search</button>
+            <button id = "search" style="border-radius: 7px; min-height: 30px; padding: 4px; cursor: pointer;">Search</button>
         </div>
     </div>
+    <br />
+    <br />
     <div id = "displayTemp">
         <div id = "tempFormat"><div id = "cursor1" class = "cursor">°C</div><div id = "cursor2" class = "cursor">°F</div></div>
         <div id = "Temp">--</div>
@@ -28,8 +30,8 @@
     <div id = "prevision">
         <div id = "day" style = "border-radius: 20px; border: 1px solid black; width: 30%; height: 30px; margin: auto; font-size: 17px; display: flex; justify-content: center; align-items: center;"></div>
         <div style = "display: flex; align-items: center; justify-content: space-around; margin-top: auto; margin-bottom: auto;">
-            <button class = "flèches" onclick = "">←</button>
-            <div id = "random3" style = "border-radius: 20px; border: 1px solid black; width: 60%; height: 250px; display: flex; justify-content: space-around; flex-direction: column;">
+            <button class = "flèches" style="cursor: pointer;" onclick = "">←</button>
+            <div id = "random3" style = "border-radius: 20px; border: 1px solid black; height: 250px; display: flex; justify-content: space-around; flex-direction: column;">
                 <div id = "random1">
                     <div id = "tminmax"> --° / --° </div>
                     <img src = "media/weatherstate/" alt = "weather_image" id = "weather_image" width = "64" height = "64">
@@ -38,7 +40,7 @@
                 <h5 id = "weather_state_precision" style = "margin: auto; font-size: 19px; font-weight: 100;">----- ------</h5>
                 <div id = "Date" style = "font-size: 21px; margin: auto;">-- ----- ----</div>
             </div>
-            <button class = "flèches" onclick = "">→</button>
+            <button class = "flèches" style="cursor: pointer;" onclick = "">→</button>
         </div>
     </div>
     <div id = "container">

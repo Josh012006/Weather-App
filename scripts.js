@@ -132,7 +132,7 @@ if ("geolocation" in navigator)
         .catch(error => alert("Erreur lors de la requête à l'API OpenWeatherMap:", error));
     }, function(error) {
       // Gestion des erreurs
-      console.error("Erreur de géolocalisation:", error.message);
+      alert("Erreur de géolocalisation:", error.message);
     });
 } 
 else 
