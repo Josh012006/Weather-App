@@ -36,6 +36,8 @@ body
     text-align: center;
     font-size: 30px;
     border-radius: 20px;
+
+    cursor: pointer;
 }
 
 #cursor1
