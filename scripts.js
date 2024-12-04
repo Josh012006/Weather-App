@@ -123,7 +123,7 @@ if ("geolocation" in navigator)
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
       
-      fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=bc2d8903cfe8e551436f9da1ad74b6d6&units=metric&current_weather=true`)
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${config.APIKEY}&units=metric&current_weather=true`)
         .then(response => response.json())
         .then(data => {
             object = JSON.parse(JSON.stringify(data));
@@ -161,7 +161,7 @@ async function weatherDisplay()
         var countrycode = code[0].cca2;
 
         //Obtention des informations
-        let request2 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city.value.toLowerCase()},${countrycode.toLowerCase()}&APPID=bc2d8903cfe8e551436f9da1ad74b6d6&units=metric&current_weather=true`)
+        let request2 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city.value.toLowerCase()},${countrycode.toLowerCase()}&APPID=${config.APIKEY}&units=metric&current_weather=true`)
         let infos = await request2.json();
         object = JSON.parse(JSON.stringify(infos));
 
